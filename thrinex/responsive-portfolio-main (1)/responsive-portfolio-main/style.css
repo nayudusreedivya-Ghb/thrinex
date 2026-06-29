@@ -1,0 +1,76 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --box: #4f46e5;
+}
+
+[data-theme="dark"] {
+  --bg: #111;
+  --text: #fff;
+  --box: #818cf8;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--box);
+  color: white;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 15px;
+  padding: 15px;
+  grid-template-areas:
+    "hero"
+    "about"
+    "projects";
+}
+
+/* Boxes */
+.box {
+  padding: 20px;
+  background: var(--box);
+  color: white;
+  border-radius: 10px;
+}
+
+/* FLEX inside projects */
+.cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 100px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

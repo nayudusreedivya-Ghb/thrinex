@@ -1,0 +1,2 @@
+# responsive-portfolio
+The main goal of a responsive portfolio is to provide a smooth user experience on all devices without breaking the design.  It usually includes sections such as Home (Hero section), About, Projects, Skills, and Contact. Modern CSS techniques like CSS Grid and Flexbox are used to create flexible layouts, while media queries help in adjusting the design for different screen widths.

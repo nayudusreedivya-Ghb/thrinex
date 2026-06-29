@@ -1,0 +1,141 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --primary: #4f46e5;
+  --secondary: #f3f4f6;
+  --focus: #ff9800;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111111;
+    --text: #ffffff;
+    --primary: #818cf8;
+    --secondary: #1f1f1f;
+  }
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* LINKS (Accessibility focus) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* HEADER NAV */
+header {
+  background: var(--secondary);
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+/* ACTIVE PAGE */
+[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* MAIN */
+main {
+  padding: 20px;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--secondary);
+}
+
+/* HEADINGS */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* ARTICLES */
+article {
+  padding: 15px;
+  margin-top: 10px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+}
+
+/* FORM (Accessible contact form) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid var(--primary);
+  outline: none;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 3px solid var(--focus);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--secondary);
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Portfolio</title>
+  <meta name="description" content="Contact form for hiring or collaboration">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section aria-labelledby="contact-title">
+    <h1 id="contact-title">Contact Me</h1>
+
+    <form aria-label="Contact Form">
+
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" required aria-required="true">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required aria-required="true">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
